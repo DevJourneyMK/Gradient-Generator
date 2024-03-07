@@ -40,8 +40,10 @@ h4{
     /* background-color: rgb(231, 235, 235); */
     border-left: 2px solid black;
     border-radius: 5px;
-    padding-left: 7px;
-    border-right: 2px solid black;
+    padding-left: 7px; 
+   box-shadow: 5px 5px 5px;
+   
+
     
  }
 #codeCopy{

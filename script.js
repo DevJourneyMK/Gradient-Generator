@@ -3,6 +3,7 @@ let btn2= document.getElementById("myButton2");
 let copyCode = document.querySelector('.copyCode')
 let codeCopy = document.getElementById("codeCopy")
 
+
 const hexValue = ()=> {
     let hexaNumber = "0123456789abcdef";
     let colors = "#"
@@ -12,8 +13,9 @@ const hexValue = ()=> {
     return colors;
 }
 
+ 
 const handleButton1 = () =>{
-     rgb1 = hexValue();
+    rgb1 = hexValue();
     console.log(rgb1);
     document.body.style.backgroundImage = `linear-gradient(to right top, ${rgb1}, ${rgb2})`
     copyCode.innerHTML = `background-image: linear-gradient(to right top, ${rgb1}, ${rgb2})`;
@@ -32,6 +34,10 @@ const handleButton2 = () =>{
 btn1.addEventListener('click', handleButton1);
 btn2.addEventListener('click', handleButton2);
 
+
 codeCopy.addEventListener('click', ()=> {
     navigator.clipboard.writeText(copyCode.innerText)
-})
+    alert("Copied the text: " + copyCode.innerHTML); 
+}
+
+)
